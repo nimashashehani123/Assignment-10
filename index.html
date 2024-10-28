@@ -6,6 +6,7 @@
     <link href="Style.css" rel="stylesheet">
 </head>
 <body>
+<script src="../lib/jquery-3.7.1.min.js"></script>
 <section id="calculator">
     <h3 class="title">Calculator</h3>
     <input id="display" readonly>
@@ -26,7 +27,7 @@
         <button onclick="appendToDisplay('0')"> 0 </button>
         <button onclick="appendToDisplay('.')"> . </button>
         <button onclick="calculator()"> = </button>
-        <button onclick="clearDisplay" class="operator-btn"> C </button>
+        <button onclick="clearDisplay()" class="operator-btn"> C </button>
     </div>
 </section>
 <script src="Script.js"></script>
