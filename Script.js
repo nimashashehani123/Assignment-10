@@ -1,8 +1,13 @@
+
 const display = $('#display');
-$('#clear-button').on('click', clearDisplay);
+display.val("0");
 
 function appendToDisplay(input){
-    display.val(display.val() + input);
+    if (display.val() === "0") {
+        display.val(input);
+    } else {
+        display.val(display.val() + input);
+    }
 }
 
 function clearDisplay(){
